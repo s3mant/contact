@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://cdn.badboy.is-a.dev/img/webpfp.gif" />
+  <link rel="icon" href="https://cdn.badboy.is-a.dev/img/profile.jpg" />
   <title>☄️・Contact Bad Boy</title>
-  <link rel="stylesheet" href="https://cdn
-.badboy.is-a.dev/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.badboy.is-a.dev/css/style.css" />
   <link rel="stylesheet" href="/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+
   <meta name="theme-color" content="#fc0352" />
   <meta property="og:title" content="Contact" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://badboy.is-a.dev" />
   <meta property="og:site_name" content="Bad Boy" />
-  <meta property="og:image" content="https://cdn.badboy.is-a.dev/img/homepfp.gif" />
+  <meta property="og:image" content="https://cdn.badboy.is-a.dev/img/home.gif" />
   <meta property="og:description" content="Contact Bad Boy." />
 
 </head>
@@ -23,7 +24,7 @@
   <header>
     <nav>
       <div class="header_logo">
-        <img src="https://cdn.badboy.is-a.dev/img/homepfp.gif" alt="i_pfp">
+        <img src="https://cdn.badboy.is-a.dev/img/home.gif" alt="i_pfp">
       </div>
       <div class="header_links">
         <ul class="nav_links">
@@ -35,22 +36,47 @@
 
   <section class="heading">
     <span>Contact Us</span>
-    <p>The message sending api is not working rn.<br>Work in progress</p>
+    <p>
+      Contact us. Let us know if you got any<br>suggestion / error / thoughs or message for us.
+    </p>
   </section>
-  
-  <form>
-  <input type="text" id="n" autofocus>
-  <label for="n" class="name"><span class="label-text">Name</span></label>
 
-  <input type="email" id="e">
-  <label for="e" class="email"><span class="label-text">Email</span></label>
+  <div class="contact-wrapper">
+    <span class="email">Send us email at: <a href="mailto:contact@mail.badboy.is-a.dev" title="Send me an email">contact@mail.badboy.is-a.dev</a></span>
 
-  <textarea id="m"></textarea>
-  <label for="m" class="message"><span class="label-text">Message</span></label>
+    <form id="contact-form">
+      <span class="contact-head">Send us message directly</span>
+      <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
 
-  <input type="submit" value="Send message" class="button">
-</form>
+      <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
 
-<script src="https://cdn.badboy.is-a.dev/js/particles.js"></script>
-</body>
+      <textarea class="form-control" rows="20" placeholder="MESSAGE" name="message" required></textarea>
+
+      <button class="btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      </button>
+    </form>
+  </div>
+
+  <footer class="footer-distributed">
+    <span class="footer__logo">Bad Boy</span>
+    <div class="footer-right">
+      <a href="/instagram"><i class="fab fa-instagram"></i></a><a href="/discord"><i class="fab fa-discord"></i></a><a href="/youtube"><i class="fab fa-youtube"></i></a><a href="/github"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="/home">Home</a>
+        <a href="/api">API</a>
+        <a href="/projects">Projects</a> <a href="https://mail.badboy.is-a.dev/">Contact</a>
+      </p>
+      <p>
+        © 2022 Bad Boy. All rights reserved. Made with <span class="heart">♥</span> by Bad Boy.
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.badboy.is-a.dev/js/particles.js"></script>
+  <script src="/contact.js"></script>
+  </body>
 </html>

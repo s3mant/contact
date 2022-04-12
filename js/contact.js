@@ -1,7 +1,7 @@
 document.querySelector('#contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     try {
-        let resp = await fetch("https://badboy.is-a.dev/receiver", {
+        let resp = await fetch("https://api.badboy.is-a.dev/receiver", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
